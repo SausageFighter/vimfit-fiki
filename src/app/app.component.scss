@@ -1,0 +1,20 @@
+mat-toolbar {
+    padding-left: 200px;
+    padding-right: 200px;
+
+    .logo {
+        margin-right: 15px;
+    }
+    .motto {
+        margin-left: 15px;
+    }
+    .spacer {
+        flex: 1 1 auto;
+    }
+}
+
+.center {
+    width:700px;
+    margin:0 auto;
+    text-align: center;
+}
