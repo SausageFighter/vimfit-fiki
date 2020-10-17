@@ -79,11 +79,27 @@
     <br>
     <div>
         <h2>Key metrics</h2>
+        <div class="chart-container">
+            <ngx-charts-pie-grid
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="metrics"
+                (select)="onSelect($event)">
+            </ngx-charts-pie-grid>
+        </div>
     </div>
 
     <br>
     <div>
         <h2>Cost structure</h2>
+        <div class="chart-container">
+            <ngx-charts-pie-chart
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="costs"
+                (select)="onSelect($event)">
+            </ngx-charts-pie-chart>
+        </div>
     </div>
     
     <br>

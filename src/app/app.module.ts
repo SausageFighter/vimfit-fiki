@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TeamComponent } from './team/team.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
