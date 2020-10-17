@@ -5,7 +5,7 @@
     Value In Motivation
   </div>
   <span class="spacer"></span>
-  <button mat-icon-button aria-label="Team">
+  <button mat-icon-button aria-label="Team" (click)="scrollToElement(team)">
     <mat-icon>groups</mat-icon>
   </button>
 </mat-toolbar>
@@ -13,3 +13,7 @@
   <milestone1></milestone1>
 </div>
 <br>
+<div #team>
+  <team></team>
+</div>
+<footer></footer>
