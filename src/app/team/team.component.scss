@@ -1,17 +1,21 @@
-.row {
-    display: flex;
-    justify-content: space-evenly;
+.team-container {
+    text-align: center;
 
-    .member {
-        .member-image {
-            border-radius: 100%;
-            max-width: 100px;
-        }
-        
-        .member-info {
-            text-align: center;
-            .member-info-line {
-                margin-bottom: 0px;
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+
+        .member {
+            .member-image {
+                border-radius: 100%;
+                max-width: 100px;
+            }
+            
+            .member-info {
+                text-align: center;
+                .member-info-line {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
