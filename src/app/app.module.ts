@@ -11,11 +11,15 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Milestone1Component
+    Milestone1Component,
+    FooterComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
