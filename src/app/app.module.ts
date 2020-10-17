@@ -9,6 +9,7 @@ import { Milestone1Component } from './milestone1/milestone1.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
