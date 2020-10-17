@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     MatButtonModule,
     MatCardModule,
     NgxChartsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
