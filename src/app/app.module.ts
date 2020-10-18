@@ -11,6 +11,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     NgxChartsModule,
     HttpClientModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
