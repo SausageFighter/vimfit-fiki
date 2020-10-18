@@ -66,4 +66,17 @@
         display: flex;
         justify-content: center;
     }
+
+    .revenue-streams {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .revenue-class-card {
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px;
+        }
+    }
 }
