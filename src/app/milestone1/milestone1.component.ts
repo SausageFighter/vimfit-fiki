@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { metrics, costs } from './costs';
 import { Subject } from 'rxjs';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
 
 @Component({
   selector: 'milestone1',
@@ -17,6 +19,24 @@ export class Milestone1Component {
   showLabels: boolean = true;
 
   center$ = new Subject<any>();
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'training',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/training.svg'));
+    iconRegistry.addSvgIcon(
+      'bill',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/bill.svg'));
+    iconRegistry.addSvgIcon(
+      'communication',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/communication.svg'));
+    iconRegistry.addSvgIcon(
+      'habits',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/habits.svg'));
+    iconRegistry.addSvgIcon(
+      'click',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/click.svg'));
+  }
 
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']

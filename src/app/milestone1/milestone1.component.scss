@@ -60,6 +60,27 @@
         }
     }
     
+    .lessons-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .lesson {
+            width: 200px;
+
+            .lesson-icon {
+                $size: 100px;
+                font-size: $size;
+                height: $size;
+                width: $size;
+            }
+
+            .lesson-label {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
     .chart-container {
         // margin-left: 100px;
         // width: 700px;
