@@ -119,10 +119,15 @@
     <div>
         <h1>Key metrics</h1>
         <div class="chart-container">
-            <ngx-charts-pie-grid
+            <ngx-charts-pie-chart
+                [view]="view"
                 [scheme]="colorScheme"
-                [results]="metrics">
-            </ngx-charts-pie-grid>
+                [results]="metrics"
+                [tooltipDisabled]="true"
+                [labels]="true"
+                [trimLabels]="false"
+                maxLabelLength="1000">
+            </ngx-charts-pie-chart>
         </div>
     </div>
 
@@ -130,11 +135,21 @@
     <div>
         <h1>Cost structure</h1>
         <div class="chart-container">
-            <ngx-charts-pie-chart
+            <ngx-charts-pie-grid
+                [view]="view"
                 [scheme]="colorScheme"
                 [results]="costs"
-                [tooltipDisabled]="true">
-            </ngx-charts-pie-chart>
+                label="Cost $">
+            </ngx-charts-pie-grid>
+            <!-- <ngx-charts-pie-chart
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="costs"
+                [tooltipDisabled]="true"
+                [legend]="true"
+                [trimLabels]="false"
+                maxLabelLength="1000">
+            </ngx-charts-pie-chart> -->
         </div>
     </div>
     
@@ -142,13 +157,5 @@
     <div>
         <h1>Revenue Streams</h1>
     </div>
-    <!--
-
-        Vivamus molestie euismod ex, non dictum libero vestibulum in. Cras consequat nisl vel dignissim mattis. In porttitor risus sed ex consequat hendrerit. Curabitur dictum metus vestibulum, semper ipsum in, condimentum sem. Phasellus sollicitudin tempor diam sit amet ultricies. Suspendisse vehicula consequat nisl, nec rhoncus dui imperdiet sed. Sed at dignissim risus. Curabitur eget risus a sem aliquam congue. Vivamus venenatis a tortor in pulvinar. Vestibulum nec justo vehicula, egestas justo at, placerat sem. Donec aliquam pharetra vulputate. Ut laoreet libero at lorem malesuada, eu pellentesque ipsum varius. Mauris pharetra metus sit amet pellentesque faucibus. Sed in laoreet odio, eu auctor sapien. Morbi in nisi at justo imperdiet ornare a ultricies ipsum. Nulla posuere, nibh ac tincidunt ornare, tortor felis pellentesque sapien, nec accumsan nisi urna nec enim.
-        
-        Quisque bibendum massa dolor, vitae fermentum lacus sollicitudin vel. Ut viverra risus ut odio imperdiet, non pretium neque auctor. Mauris diam ligula, gravida at pharetra nec, congue ac ante. Sed quis sollicitudin sem, id hendrerit tellus. In porttitor, urna at commodo pretium, tellus arcu lacinia mauris, nec scelerisque lectus purus sit amet eros. Nam id lectus ut erat convallis rhoncus. Cras vel leo sit amet mi aliquet pulvinar.
-        
-        Etiam dictum sapien vitae quam viverra, in egestas orci lacinia. Vestibulum nulla lorem, auctor id fermentum sit amet, bibendum at mauris. Nulla enim lectus, malesuada ac lacinia sit amet, scelerisque vel eros. Vestibulum quis nibh eget sapien ullamcorper euismod a eget quam. Donec bibendum rhoncus ligula, at egestas turpis semper a. Integer porttitor at ipsum quis auctor. Ut fringilla lectus quam, id tempor ante iaculis et. Aenean in ipsum libero. Maecenas sit amet dui elit. Aliquam pellentesque odio quis ante gravida molestie.      
-    -->
 </div>
 

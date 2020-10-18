@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 export class Milestone1Component {
   metrics = metrics;
   costs = costs;
-  // view: any[] = [-1, 400];
+  view: any[] = [1100, 400];
 
   // options
   showLegend: boolean = true;

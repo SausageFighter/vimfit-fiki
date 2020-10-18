@@ -27,27 +27,35 @@ export var metrics = [
 
 export var costs = [
     {
-      "name": "Germany",
-      "value": 8940000
+      "name": "Platform dependent development",
+      "value": 42620.4774
     },
     {
-      "name": "USA",
-      "value": 5000000
+      "name": "Overall app development",
+      "value": 530388.1632
     },
     {
-      "name": "France",
-      "value": 7200000
+      "name": "Onboarding process",
+      "value": 21783.79956
     },
     {
-      "name": "UK",
-      "value": 6200000
+      "name": "Analytics about users that can be used for personal growth or sale",
+      "value": 67245.64
     },
     {
-      "name": "Italy",
-      "value": 4200000
+      "name": "App engagement with users",
+      "value": 91870.81
     },
     {
-      "name": "Spain",
-      "value": 8200000
-    }
+      "name": "Saas integrations",
+      "value": 17048.19
+    },
+    {
+      "name": "Paas integrations",
+      "value": 100394.90
+    },
+    {
+      "name": "In app coin development",
+      "value": 75769.74
+    },
   ];
