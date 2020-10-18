@@ -10,7 +10,7 @@
         flex-wrap: wrap;
     
         .problem {
-            max-width: 200px;
+            max-width: 300px;
         }
 
         .spacer {
@@ -18,7 +18,7 @@
         }
 
         .solution {
-            max-width: 200px;
+            max-width: 300px;
         }
     }
 
@@ -28,28 +28,34 @@
         justify-content: space-around;
         
         .customer-card {
-            max-width: 200px;
+            width: 200px;
+            height: 200px;
             border: 1px solid black;
             border-radius: 15px;
-            padding: 5px;
+            padding: 15px;
         }
     }
 
     .competitors {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-        .competitor-card {
-            max-width: 200px;
-            border: 1px solid black;
-            border-radius: 15px;
-            padding: 5px;
 
-            a:link, a:visited {
-                color: black;
-                background-color: transparent;
-                text-decoration: underline;
+        .competitors-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            .competitor-card {
+                width: 200px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 5px;
+                margin: 5px;
+
+                a:link, a:visited {
+                    color: black;
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
             }
         }
     }

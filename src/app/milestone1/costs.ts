@@ -1,27 +1,27 @@
 export var metrics = [
     {
-      "name": "Germany",
-      "value": 8940000
+      "name": "No. of active users",
+      "value": 1
     },
     {
-      "name": "USA",
-      "value": 5000000
+      "name": "No. of downloads",
+      "value": 1
     },
     {
-      "name": "France",
-      "value": 7200000
+      "name": "Rating on Play Store and App Store",
+      "value": 1
     },
     {
-      "name": "UK",
-      "value": 6200000
+      "name": "No. of B2B customers",
+      "value": 1
     },
     {
-      "name": "Italy",
-      "value": 4200000
+      "name": "No. of challenges completed / user",
+      "value": 1
     },
     {
-      "name": "Spain",
-      "value": 8200000
+      "name": "No. of packages bought / user",
+      "value": 1
     }
   ];
 
