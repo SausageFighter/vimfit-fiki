@@ -6,17 +6,19 @@ mat-toolbar {
         margin-right: 15px;
         font-family: 'Fugaz One', cursive;
     }
+
     .motto {
         margin-left: 15px;
         font-family: 'Montserrat', sans-serif;
     }
+
     .spacer {
         flex: 1 1 auto;
     }
 }
 
 .center {
-    width:1200px;
-    margin:0 auto;
+    width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
