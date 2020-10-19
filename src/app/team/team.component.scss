@@ -1,20 +1,45 @@
 .team-container {
     text-align: center;
 
-    .row {
-        display: flex;
-        justify-content: space-evenly;
+    .team {
+        margin-top: 200px;
+        margin-bottom: 100px;
 
-        .member {
-            .member-image {
-                border-radius: 100%;
-                max-width: 100px;
-            }
-            
-            .member-info {
-                text-align: center;
-                .member-info-line {
-                    margin-bottom: 0px;
+        h2 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040;
+            font-size: 60px;
+            color: #A9A9A9;
+        }
+    }
+
+    .rows-container {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+
+            .member {
+                .member-image {
+                    border-radius: 100%;
+                    max-width: 100px;
+                }
+
+                .member-info {
+                    text-align: center;
+
+                    .member-info-line {
+                        margin-bottom: 0px;
+
+                        a {
+                            margin-left: 3px;
+                            margin-right: 3px;
+                        }
+                    }
                 }
             }
         }

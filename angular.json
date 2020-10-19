@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vimfit"
+    }
+  },
+  "defaultProject": "vimfit",
+  "cli": {
+    "analytics": "bf7a897a-cc50-48b8-ac1b-61dcfac82562"
+  }
 }

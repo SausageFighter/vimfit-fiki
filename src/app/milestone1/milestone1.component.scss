@@ -4,21 +4,57 @@
 }
 
 .milestone1-container {
+    margin-top: 100px;
+
+    .milestone1 {
+
+        h1 {
+            font-weight: 800;
+            font-size: 60px;
+            color: #A9A9A9;
+        }
+    }
+
+    h1, h2 {
+        color: #404040;
+    }
 
     .problem-solution {
         display: flex;
         flex-wrap: wrap;
-    
+        color: #404040;
+        width: 1000px;
+        margin: 0 auto;
+
         .problem {
             max-width: 300px;
+            margin-top: 30px;
         }
 
         .spacer {
             flex-grow: 1;
+            margin-top: 30px;
         }
 
         .solution {
             max-width: 300px;
+            margin-top: 30px;
+        }
+    }
+
+    .spacer {
+        height: 150px;
+    }
+
+    .cutomer-title {
+        margin-top: 60px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 60px;
+            color: #A9A9A9;
+            // color: #404040;
         }
     }
 
@@ -26,40 +62,77 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        
+        margin-top: 60px;
+
         .customer-card {
             width: 200px;
             height: 200px;
-            border: 1px solid black;
+            // border: 1px solid black;
             border-radius: 15px;
             padding: 15px;
+            box-shadow: 10px 10px 5px #A9A9A9;
+            background-color: #CAEBF2;
+            color: #404040;
+        }
+    }
+
+    .competition-title {
+        margin-top: 120px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040;
+            font-size: 60px;
+            color: #A9A9A9;
         }
     }
 
     .competitors {
+        margin-top: 60px;
+        // margin: 0 auto;
 
         .competitors-row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            
+            justify-content: space-evenly;
+            margin-top: 50px;
+
             .competitor-card {
                 width: 200px;
                 height: 300px;
-                border: 1px solid black;
+                // border: 1px solid black;
                 border-radius: 15px;
                 padding: 5px;
                 margin: 5px;
+                box-shadow: 10px 10px 5px #A9A9A9;
+                background-color: #CAEBF2;
+                color: #404040;
 
-                a:link, a:visited {
-                    color: black;
+                a:link,
+                a:visited {
+                    color: #404040;
                     background-color: transparent;
                     text-decoration: underline;
                 }
             }
         }
     }
-    
+
+    .knowledge {
+        margin-top: 200px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040;   
+            font-size: 60px;
+            color: #A9A9A9;
+        }
+    }
+
     .lessons-row {
         display: flex;
         flex-wrap: wrap;
@@ -81,11 +154,56 @@
             }
         }
     }
+
+    .metrics {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040; 
+            font-size: 60px;
+            color: #A9A9A9;
+        }
+    }
+
     .chart-container {
         // margin-left: 100px;
         // width: 700px;
         display: flex;
         justify-content: center;
+    }
+
+    .note {
+        margin-top: 50px;
+        color: #404040;
+    }
+
+    .cost {
+        margin-top: 200px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040;
+            font-size: 60px;
+            color: #A9A9A9;
+        }
+    }
+
+    .revenue {
+        margin-top: 200px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            // color: #404040;
+            font-size: 60px;
+            color: #A9A9A9;
+        }
     }
 
     .revenue-streams {
@@ -95,9 +213,12 @@
 
         .revenue-class-card {
             width: 200px;
-            border: 1px solid black;
+            // border: 1px solid black;
             border-radius: 15px;
             padding: 15px;
+            box-shadow: 10px 10px 5px #A9A9A9;
+            background-color: #CAEBF2;
+            color: #404040;
         }
     }
 }
