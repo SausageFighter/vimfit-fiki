@@ -1,6 +1,12 @@
+@import "_config.scss";
+
 mat-toolbar {
     padding-left: 200px;
     padding-right: 200px;
+
+    mat-icon {
+        @include md-icon-size(40px);
+    }
 
     .logo {
         margin-right: 15px;

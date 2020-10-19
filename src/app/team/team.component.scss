@@ -32,8 +32,14 @@
                 .member-info {
                     text-align: center;
 
+                    .name {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
                     .member-info-line {
                         margin-bottom: 0px;
+                        color: #404040;
 
                         a {
                             margin-left: 3px;
