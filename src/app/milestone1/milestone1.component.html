@@ -29,7 +29,6 @@
         </div>
     </div>
 
-    <br>
     <div class="spacer"></div>
     <div>
         <div class="cutomer-title">
@@ -57,7 +56,7 @@
             </div>
         </div>
     </div>
-    <br>
+
     <div class="spacer"></div>
     <div>
         <div class="competition-title">
@@ -124,7 +123,6 @@
                     </p>
                 </div>
             </div>
-            <br>
             <div class="competitors-row">
                 <div class="competitor-card">
                     <h2><a href="https://www.totalcoaching.com/en/" target="_blank">Total Coaching</a></h2>
@@ -161,7 +159,7 @@
         <br>
     </div>
 
-    <br>
+    <div class="spacer"></div>
     <div>
         <div class="knowledge">
             <h1>What we've learned</h1>
@@ -180,7 +178,6 @@
                 <div class="lesson-label">Create a supportive community</div>
             </div>
         </div>
-        <br><br>
         <div class="lessons-row">
             <div class="lesson">
                 <mat-icon class="lesson-icon" color="accent" svgIcon="habits" aria-hidden="false"></mat-icon>
@@ -192,32 +189,43 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+
+    <div class="spacer"></div>
     <div>
         <div class="metrics">
             <h1>Key metrics</h1>
         </div>
         <div class="chart-container">
-            <ngx-charts-pie-chart [view]="view" [scheme]="colorScheme" [results]="metrics" [tooltipDisabled]="true"
-                [labels]="true" [trimLabels]="false" maxLabelLength="1000">
+            <ngx-charts-pie-chart 
+                [view]="metricsChartView"
+                [scheme]="colorScheme"
+                [results]="metrics"
+                [tooltipDisabled]="true"
+                [labels]="true"
+                [trimLabels]="false"
+                maxLabelLength="1000">
             </ngx-charts-pie-chart>
         </div>
     </div>
 
-    <br>
+    <div class="spacer"></div>
     <div>
         <div class="cost">
             <h1>Cost structure</h1>
         </div>
         <div class="chart-container">
-            <ngx-charts-pie-grid [view]="view" [scheme]="colorScheme" [results]="costs" label="Cost $">
+            <ngx-charts-pie-grid
+                [view]="costsChartView"
+                [scheme]="colorScheme"
+                [results]="costs"
+                label="Cost $">
             </ngx-charts-pie-grid>
         </div>
         <p class="note">* The cost structure was calculated on a 5 years time frame and the total estimated sum is
             947,121.72€</p>
     </div>
 
-    <br>
+    <div class="spacer"></div>
     <div>
         <div class="revenue">
             <h1>Revenue Streams</h1>
