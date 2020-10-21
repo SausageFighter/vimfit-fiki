@@ -5,19 +5,19 @@ mat-toolbar {
     padding-right: 10%;
     position: fixed;
     top: 0%;
-    
 
     mat-icon {
         @include md-icon-size(40px);
     }
 
     .logo {
-        margin-right: 15px;
+        margin-right: 40px;
         font-family: 'Fugaz One', cursive;
+        font-size: 26px;
     }
 
     .motto {
-        margin-left: 15px;
+        margin-left: 40px;
         font-family: 'Montserrat', sans-serif;
     }
 
