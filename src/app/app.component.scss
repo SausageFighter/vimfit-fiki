@@ -1,8 +1,8 @@
 @import "_config.scss";
 
 mat-toolbar {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
 
     mat-icon {
         @include md-icon-size(40px);
@@ -24,7 +24,7 @@ mat-toolbar {
 }
 
 .center {
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
