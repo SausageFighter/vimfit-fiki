@@ -1,19 +1,31 @@
-<mat-toolbar>
-  <span class="logo">VIMFit</span>
-  <mat-divider [vertical]="true" style="height:70%"></mat-divider>
-  <div class="motto">
-    Value In Motivation
-  </div>
-  <span class="spacer"></span>
-  <button mat-icon-button aria-label="Team" (click)="scrollToElement(team)">
-    <mat-icon inline="true" >groups</mat-icon>
-  </button>
-</mat-toolbar>
-<div class="center">
-  <milestone1></milestone1>
-</div>
-<br>
-<div #team>
-  <team></team>
-</div>
-<footer></footer>
+<mat-sidenav-container>
+  <mat-sidenav [permanentAt]="960" #start [mode]="'side'" position="end" [fixedInViewport]="true">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+  <mat-toolbar>
+      <span class="logo">VIMFit</span>
+      <mat-divider [vertical]="true" style="height:70%"></mat-divider>
+      <div class="motto">
+        Value In Motivation
+      </div>
+      <span class="spacer"></span>
+      <button mat-icon-button aria-label="Team" (click)="scrollToElement(team)">
+        <mat-icon inline="true" >groups</mat-icon>
+      </button>
+      <button mat-icon-button *ngIf="isMobile" (click)="start.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="center">
+      <milestone1></milestone1>
+      <!-- <milestone2></milestone2> -->
+    </div>
+    <br>
+    <div #team>
+      <team></team>
+    </div>
+    <footer></footer> 
+  </mat-sidenav-content>
+</mat-sidenav-container>

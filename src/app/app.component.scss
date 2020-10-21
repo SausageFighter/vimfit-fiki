@@ -1,33 +1,46 @@
 @import "_config.scss";
 
-mat-toolbar {
-    padding-left: 10%;
-    padding-right: 10%;
-    position: fixed;
-    top: 0%;
+mat-sidenav-container {
 
-    mat-icon {
-        @include md-icon-size(40px);
+    mat-sidenav {
+        background-color: #efefef;
+        overflow: hidden;
+        height: 100%;
     }
+     
+    mat-sidenav-content {
+        background-color: #efefef;
 
-    .logo {
-        margin-right: 40px;
-        font-family: 'Fugaz One', cursive;
-        font-size: 26px;
+        mat-toolbar {
+            padding-left: 10%;
+            padding-right: 10%;
+            position: fixed;
+            top: 0%;
+
+            mat-icon {
+                @include md-icon-size(40px);
+            }
+
+            .logo {
+                margin-right: 40px;
+                font-family: 'Fugaz One', cursive;
+                font-size: 26px;
+            }
+
+            .motto {
+                margin-left: 40px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .spacer {
+                flex: 1 1 auto;
+            }
+        }
+        
+        .center {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
-
-    .motto {
-        margin-left: 40px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .spacer {
-        flex: 1 1 auto;
-    }
-}
-
-.center {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
 }

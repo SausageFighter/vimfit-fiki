@@ -9,20 +9,26 @@ import { Milestone1Component } from './milestone1/milestone1.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { HttpClientModule } from '@angular/common/http';
+import { Milestone2Component } from './milestone2/milestone2.component';
+import { ResponsiveSidenavModule } from './responsive-sidenav/responsive-sidenav.module';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Milestone1Component,
     FooterComponent,
-    TeamComponent
+    TeamComponent,
+    Milestone2Component,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     NgxChartsModule,
     HttpClientModule,
     MatGridListModule,
+    MatSidenavModule,
+    ResponsiveSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
