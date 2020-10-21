@@ -3,6 +3,9 @@
 mat-toolbar {
     padding-left: 10%;
     padding-right: 10%;
+    position: fixed;
+    top: 0%;
+    
 
     mat-icon {
         @include md-icon-size(40px);
