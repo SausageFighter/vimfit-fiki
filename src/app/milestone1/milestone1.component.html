@@ -169,10 +169,16 @@
                 <mat-icon class="lesson-icon" color="accent" svgIcon="training" aria-hidden="false"></mat-icon>
                 <div class="lesson-label">Free training packages</div>
             </div>
+
+            <div class="lesson"></div>
+
             <div class="lesson">
                 <mat-icon class="lesson-icon" color="accent" svgIcon="bill" aria-hidden="false"></mat-icon>
                 <div class="lesson-label">Make billing clear</div>
             </div>
+
+            <div class="lesson"></div>
+
             <div class="lesson">
                 <mat-icon class="lesson-icon" color="accent" svgIcon="communication" aria-hidden="false"></mat-icon>
                 <div class="lesson-label">Create a supportive community</div>
@@ -183,6 +189,9 @@
                 <mat-icon class="lesson-icon" color="accent" svgIcon="habits" aria-hidden="false"></mat-icon>
                 <div class="lesson-label">Good habitual learning</div>
             </div>
+
+            <div class="lesson"></div>
+
             <div class="lesson">
                 <mat-icon class="lesson-icon" color="accent" svgIcon="click" aria-hidden="false"></mat-icon>
                 <div class="lesson-label">Ease of use</div>
@@ -191,19 +200,14 @@
     </div>
 
     <div class="spacer"></div>
-    <div>
+    <div class="honeycontainer">
         <div class="metrics">
             <h1>Key metrics</h1>
         </div>
+
         <div class="chart-container">
-            <ngx-charts-pie-chart 
-                [view]="metricsChartView"
-                [scheme]="colorScheme"
-                [results]="metrics"
-                [tooltipDisabled]="true"
-                [labels]="true"
-                [trimLabels]="false"
-                maxLabelLength="1000">
+            <ngx-charts-pie-chart [view]="metricsChartView" [scheme]="colorScheme" [results]="metrics"
+                [tooltipDisabled]="true" [labels]="true" [trimLabels]="false" maxLabelLength="1000">
             </ngx-charts-pie-chart>
         </div>
     </div>
@@ -214,18 +218,15 @@
             <h1>Cost structure</h1>
         </div>
         <div class="chart-container">
-            <ngx-charts-pie-grid
-                [view]="costsChartView"
-                [scheme]="colorScheme"
-                [results]="costs"
-                label="Cost $">
+            <ngx-charts-pie-grid [view]="costsChartView" [scheme]="colorScheme" [results]="costs" label="Cost $">
             </ngx-charts-pie-grid>
         </div>
-        <p class="note">* The cost structure was calculated on a 5 years time frame and the total estimated sum is
-            947,121.72€</p>
+        <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame and the total estimated sum is
+            <b>947,121.72€</b></p>
     </div>
 
     <div class="spacer"></div>
+
     <div>
         <div class="revenue">
             <h1>Revenue Streams</h1>
@@ -241,10 +242,11 @@
                 <p>Donations</p>
                 <p>Commisions</p>
             </div>
-            <!-- <div class="dollar-container">
-                <mat-icon class="dollar-icon" color="accent" svgIcon="dollar" aria-hidden="false"></mat-icon>
-                <div class="dollar-label">Make billing clear</div>
-            </div> -->
+
+            <div class="dollar-container">
+                <mat-icon class="dollar-icon" svgIcon="dollar" aria-hidden="false"></mat-icon>
+            </div>
+
             <div class="revenue-class-card">
                 <h2>B2B Enterprise</h2>
                 <p>Advertising</p>

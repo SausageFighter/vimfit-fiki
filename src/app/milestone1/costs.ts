@@ -28,7 +28,7 @@ export var metrics = [
 export var costs = [
     {
       "name": "Platform dependent development",
-      "value": 42620.4774
+      "value": 42620.4774,
     },
     {
       "name": "Overall app development",

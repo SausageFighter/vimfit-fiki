@@ -41,6 +41,9 @@ export class Milestone1Component implements OnInit {
     iconRegistry.addSvgIcon(
       'click',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/click.svg'));
+    iconRegistry.addSvgIcon(
+      'dollar',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dollar.svg'));
   }
 
   ngOnInit() {
@@ -62,7 +65,7 @@ export class Milestone1Component implements OnInit {
       this.costsChartHeight = 400;
       this.metricsChartHeight = 400;
     }
-  
+
     this.costsChartView = [this.chartsWidth * 0.8, this.costsChartHeight];
     this.metricsChartView = [this.chartsWidth * 0.8, this.metricsChartHeight];
   }

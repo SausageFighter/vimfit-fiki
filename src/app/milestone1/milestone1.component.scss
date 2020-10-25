@@ -142,8 +142,8 @@
     .lessons-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-
+        justify-content: center;
+        
         .lesson {
             width: 200px;
             margin: 30px;
@@ -212,27 +212,22 @@
     .revenue-streams {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
 
-        // .dollar-container {
-        //     // display: flex;
+        .dollar-container {
+            display: flex;
+            align-self: center;
 
-        //     width: 200px;
-        //     margin: 30px;
+            width: 200px;
+            margin: 30px;
 
-        //     .dollar-icon {
-        //         $size: 100px;
-        //         font-size: $size;
-        //         height: $size;
-        //         width: $size;
-        //     }
-
-        //     .dollar-label {
-        //         margin-top: 10px;
-        //         font-size: 20px;
-        //         color: #404040;
-        //     }
-        // }
+            .dollar-icon {
+                $size: 230px;
+                font-size: $size;
+                height: $size;
+                width: $size;
+            }
+        }
 
         .revenue-class-card {
             width: 200px;
@@ -242,6 +237,8 @@
             box-shadow: 10px 10px 5px #A9A9A9;
             background-color: #CAEBF2;
             color: #404040;
+            margin-left: 100px;
+            margin-right: 100px;
         }
     }
 }
