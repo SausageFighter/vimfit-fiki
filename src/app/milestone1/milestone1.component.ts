@@ -44,6 +44,15 @@ export class Milestone1Component implements OnInit {
     iconRegistry.addSvgIcon(
       'dollar',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dollar.svg'));
+    iconRegistry.addSvgIcon(
+      'house',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/house.svg'));
+    iconRegistry.addSvgIcon(
+      'teaching',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/teaching.svg'));
+    iconRegistry.addSvgIcon(
+      'world-grid',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/world-grid.svg'));
   }
 
   ngOnInit() {

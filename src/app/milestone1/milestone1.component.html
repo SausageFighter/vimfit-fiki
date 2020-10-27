@@ -6,31 +6,62 @@
     <h1>Fiki and project description</h1>
     <h2>VIMFit - your daily fitness motivation</h2>
 
+    <div class="spacer"></div>
     <div class="problem-solution">
-        <div class="problem">
-            <h2>Problem</h2>
-            <p>The lack of education from health care professionals to end clients/patients amounts to the main
-                decision whether to start a healthy lifestyle or not.</p>
-            <p>There is no free platform where “professional lifestyle coaches” can enable a population to start making
-                healthier life choices.</p>
-            <p>While COVID is making a rampant change in the world economy, one of the industries suffering the most is
-                the fitness industry. With gyms closing down and re-opening for short periods of time before another
-                spike hits. People are looking for new ways to keep or get in shape from home or in a safe environment
-                with the guidance of a professional lifestyle coach.</p>
-        </div>
-        <div class="spacer"></div>
-        <div class="solution">
-            <h2>Solution</h2>
-            <p>Habitual learning at its peak with input from health professionals from all over the world.</p>
-            <p>Free guidance and support from a community with a global outreach.</p>
-            <p>During COVID with adults spending more time at home, VIMFit will be taking this opportunity to entice new
-                users to stay active and healthy with mass health analysis triggered by country, age, ethnic background,
-                or gender.</p>
-        </div>
+        <table class="table table-sm">
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-title">Problems</td>
+                    <td class="table-title"></td>
+                    <td class="table-title">Solutions</td>
+                </tr>
+                <tr>
+                    <td>The lack of education from health care professionals to end clients/patients amounts to the main
+                        decision whether to start a healthy lifestyle or not.</td>
+                    <td class="table-icon">
+                        <mat-icon class="teaching-icon" svgIcon="teaching" aria-hidden="false"></mat-icon>
+                    </td>
+                    <td>Habitual learning at its peak with input from health professionals from all over the world.</td>
+                </tr>
+                <tr>
+                    <td>There is no free platform where “professional lifestyle coaches” can enable a population to
+                        start
+                        making
+                        healthier life choices.</td>
+                    <td class="table-icon">
+                        <mat-icon class="world-grid-icon" svgIcon="world-grid" aria-hidden="false"></mat-icon>
+                    </td>
+                    <td>Free guidance and support from a community with a global outreach.</td>
+                </tr>
+                <tr>
+                    <td>While COVID is making a rampant change in the world economy, one of the industries suffering the
+                        most
+                        is
+                        the fitness industry. With gyms closing down and re-opening for short periods of time before
+                        another
+                        spike hits. People are looking for new ways to keep or get in shape from home or in a safe
+                        environment
+                        with the guidance of a professional lifestyle coach.</td>
+                    <td class="table-icon">
+                        <mat-icon class="house-icon" svgIcon="house" aria-hidden="false"></mat-icon>
+                    </td>
+                    <td>During COVID with adults spending more time at home, VIMFit will be taking this opportunity to
+                        entice
+                        new
+                        users to stay active and healthy with mass health analysis triggered by country, age, ethnic
+                        background,
+                        or gender.</td>
+                </tr>
+
+            </tbody>
+        </table>
     </div>
 
     <div class="spacer"></div>
-    <div>
+
+    <div class="customer-container">
         <div class="cutomer-title">
             <h1>Our customers</h1>
         </div>
@@ -58,6 +89,7 @@
     </div>
 
     <div class="spacer"></div>
+
     <div>
         <div class="competition-title">
             <h1>Competition</h1>
@@ -221,7 +253,8 @@
             <ngx-charts-pie-grid [view]="costsChartView" [scheme]="colorScheme" [results]="costs" label="Cost $">
             </ngx-charts-pie-grid>
         </div>
-        <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame and the total estimated sum is
+        <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame and the total estimated sum
+            is
             <b>947,121.72€</b></p>
     </div>
 
