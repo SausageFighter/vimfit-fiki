@@ -16,6 +16,7 @@ mat-sidenav-container {
             padding-right: 10%;
             position: fixed;
             top: 0%;
+            z-index: 100;
 
             mat-icon {
                 @include md-icon-size(40px);
