@@ -62,6 +62,21 @@ export class Milestone1Component implements OnInit {
     iconRegistry.addSvgIcon(
       'team',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/team.svg'));
+    iconRegistry.addSvgIcon(
+      'app-store',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/app-store.svg'));
+    iconRegistry.addSvgIcon(
+      'google-play',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/google-play.svg'));
+    iconRegistry.addSvgIcon(
+      'star',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/star.svg'));
+    iconRegistry.addSvgIcon(
+      'like',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/like.svg'));
+    iconRegistry.addSvgIcon(
+      'dislike',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/dislike.svg'));
   }
 
   ngOnInit() {
