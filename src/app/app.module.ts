@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Milestone2Component } from './milestone2/milestone2.component';
 import { ResponsiveSidenavModule } from './responsive-sidenav/responsive-sidenav.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatGridListModule,
     MatSidenavModule,
     ResponsiveSidenavModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
