@@ -55,6 +55,37 @@ export class Milestone2Component implements OnInit {
     iconRegistry.addSvgIcon(
       'human-footprints',
       sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/human-footprints.svg'));
+    iconRegistry.addSvgIcon(
+      'start-up',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/start-up.svg'));
+    iconRegistry.addSvgIcon(
+      'easy-slalom',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/easy-slalom.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'network',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/network.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'guide',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/guide.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'id-card',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/id-card.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'ambassador',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/ambassador.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'social-media',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/social-media.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'confetti',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/confetti.svg')
+    );
   }
 
   ngOnInit(): void {
