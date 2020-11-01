@@ -178,7 +178,41 @@
 
                     margin-top: 25px;
                     margin-bottom: 25px;
-                    // border-right: 1px solid #c9c9c9;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    .divider {
+                        margin: 20px auto;
+                        content: "";
+                        width: 1px;
+                        border: 1px solid #c9c9c9;
+                    }
+                }
+            }
+
+            .row-solution {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                text-align: left;
+
+                .icon {
+                    margin-right: 36px;
+                    width: 60px;
+                    height: auto;
+                    margin: auto;
+                }
+
+                .info-text {
+                    /* Medium devices (landscape tablets, 768px and up) */
+                    @media only screen and (min-width: 768px) {
+                        width: 80%
+                    }
+                    @media only screen and (max-width: 767px) {
+                        min-width: 100%
+                    }
+                    margin-top: 25px;
+                    margin-bottom: 25px;
                 }
 
                 @media only screen and (min-width: 768px) {
