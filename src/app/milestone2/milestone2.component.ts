@@ -9,7 +9,17 @@ import { MatIconRegistry } from '@angular/material/icon';
 })
 export class Milestone2Component implements OnInit {
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { 
+      iconRegistry.addSvgIcon(
+        'contract',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/contract.svg'));
+      iconRegistry.addSvgIcon(
+        'broken-bone',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/broken-bone.svg'));
+      iconRegistry.addSvgIcon(
+        'fatigue',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/fatigue.svg'));
+  }
 
   ngOnInit(): void {
   }
