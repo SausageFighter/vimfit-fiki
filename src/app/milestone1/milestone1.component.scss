@@ -25,7 +25,7 @@
     h2 {
         color: #404040;
     }
-    
+
     .first-subtitle {
         font-size: 40px;
     }
@@ -284,31 +284,31 @@
         }
     }
 
-    .honeycontainer {
+    .honeycontainer {}
 
-        .metrics {
-            margin-top: 100px;
-            margin-bottom: 100px;
+    .metrics {
+        margin-top: 100px;
+        margin-bottom: 100px;
 
-            h1 {
-                font-weight: 800;
-                font-size: 40px;
-                font-size: 60px;
-                color: #A9A9A9;
-            }
-        }
-
-        .chart-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .note {
-            margin-top: 50px;
-            color: #404040;
-            border: 0;
+        h1 {
+            font-weight: 800;
+            font-size: 40px;
+            font-size: 60px;
+            color: #A9A9A9;
         }
     }
+
+    .chart-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .note {
+        border: 0;
+        margin-top: 50px;
+        color: #404040;
+    }
+
 
     .cost {
         margin-top: 200px;
