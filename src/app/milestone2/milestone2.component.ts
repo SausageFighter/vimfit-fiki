@@ -3,7 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-milestone2',
+  selector: 'milestone2',
   templateUrl: './milestone2.component.html',
   styleUrls: ['./milestone2.component.scss']
 })
