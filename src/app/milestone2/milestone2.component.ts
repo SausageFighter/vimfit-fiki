@@ -43,6 +43,18 @@ export class Milestone2Component implements OnInit {
     iconRegistry.addSvgIcon(
       'fatigue',
       sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/fatigue.svg'));
+    iconRegistry.addSvgIcon(
+      'motivation',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/motivation.svg'));
+    iconRegistry.addSvgIcon(
+      'platform',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/platform.svg'));
+    iconRegistry.addSvgIcon(
+      'social-care',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/social-care.svg'));
+    iconRegistry.addSvgIcon(
+      'human-footprints',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/color-icons/human-footprints.svg'));
   }
 
   ngOnInit(): void {
