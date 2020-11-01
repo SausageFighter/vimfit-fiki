@@ -354,15 +354,13 @@
 
     <div class="spacer"></div>
 
-    <div class="honeycontainer">
-        <div class="metrics">
-            <h1>Key metrics</h1>
-        </div>
-        <div class="chart-container">
-            <ngx-charts-pie-chart [view]="metricsChartView" [scheme]="colorScheme" [results]="metrics"
-                [tooltipDisabled]="true" [labels]="true" [trimLabels]="false" maxLabelLength="1000">
-            </ngx-charts-pie-chart>
-        </div>
+    <div class="metrics">
+        <h1>Key metrics</h1>
+    </div>
+    <div class="chart-container">
+        <ngx-charts-pie-chart [view]="metricsChartView" [scheme]="colorScheme" [results]="metrics"
+            [tooltipDisabled]="true" [labels]="true" [trimLabels]="false" maxLabelLength="1000">
+        </ngx-charts-pie-chart>
     </div>
 
     <div>
@@ -375,7 +373,10 @@
         </div>
         <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame and the total estimated sum
             is
-            <b>947,121.72€</b></p>
+            <b>947,121.72€</b>. <a
+                href="https://docs.google.com/spreadsheets/d/1qMITbRC4LJphp6orZ7jd061LK2bxRtzM7xQFYTXRSAo/edit?usp=sharing"
+                target="_blank">More
+                Details</a></p>
     </div>
 
     <div>
