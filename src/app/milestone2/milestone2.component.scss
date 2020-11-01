@@ -259,24 +259,44 @@
             .step-subtitle {
                 display: flex;
                 justify-content: flex-start;
+                flex-wrap: wrap;
                 margin-top: 30px;
                 margin-bottom: 30px;
 
                 .footprints {
-                    width: 60px;
+                    @media only screen and (min-width: 768px) {
+                        width: 60px;
+                    }
+                    
+                    @media only screen and (max-width: 767px) {
+                        width: 50px;
+                    }
                     height: auto;
-                    margin: auto 30px auto 0px;
+                    margin: 0px 30px 20px 0px;
                 }
 
                 .step {
-                    font-size: 36px;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 36px;
+                    }
+                    
+                    @media only screen and (max-width: 767px) {
+                        font-size: 28px;
+                    }
                     margin: auto 30px auto 0px;
                 }
 
                 .subtitle {
-                    font-size: 28px;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 28px;
+                    }
+                    
+                    @media only screen and (max-width: 767px) {
+                        font-size: 20px;
+                    }
                     font-weight: 700;
                     margin: auto 0px auto 0px;
+                    text-align: left;
                 }
             }
 
