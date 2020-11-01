@@ -21,6 +21,10 @@
         justify-content: center;
         margin: 0 auto;
 
+        @media only screen and (min-width: 768px) {
+            width: 70%
+        }
+
         .text {
             margin-top: 50px;
             overflow: hidden;
@@ -61,13 +65,18 @@
     }
 
     .survey-conclusion {
+
+        @media only screen and (min-width: 768px) {
+            width: 70%
+        }
+
         margin: 0 auto;
 
         .row {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             margin-top: 60px;
 
             .card-left {
@@ -93,6 +102,28 @@
 
                 &:hover {
                     overflow: auto;
+                }
+
+                .icons-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    .feature {
+                        width: 150px;
+                        height: 100px;
+
+                        p {
+                            margin-top: 3%;
+                            text-align: center;
+                        }
+
+                        mat-icon {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
                 }
             }
 
@@ -128,7 +159,6 @@
         font-weight: 700;
         font-style: normal;
         text-align: left;
-        // padding-left: 5%;
     }
 
     section {
