@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .team-container {
     padding-bottom: 1px;
     text-align: center;
@@ -16,46 +18,52 @@
         }
     }
 
-    .rows-container {
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 100px;
+    .row {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-flow: wrap;
+        margin-bottom: 100px;
+        width: 60%;
+        margin: 0 auto 100px auto;
 
-        .row {
-            display: flex;
-            justify-content: space-between;
-            flex-flow: wrap;
-            width: 60%;
+        .member {
+            margin: 5px;
+            // width: calc(100% / 6);
+            min-width: 50px;
+            padding: 20px;
+            margin: 0 auto;
 
-            .member {
-                margin: 5px;
-                width: calc(100% / 6);
+            .member-image {
+                border-radius: 100%;
+                max-width: 100px;
+            }
 
-                .member-image {
-                    border-radius: 100%;
-                    max-width: 100px;
+            .member-info {
+                text-align: center;
+
+                .name {
+                    font-size: 20px;
+                    font-weight: 500;
                 }
 
-                .member-info {
-                    text-align: center;
+                .member-info-line {
+                    margin-bottom: 0px;
+                    color: #404040;
 
-                    .name {
-                        font-size: 20px;
-                        font-weight: 500;
-                    }
+                    a {
+                        margin-left: 3px;
+                        margin-right: 3px;
 
-                    .member-info-line {
-                        margin-bottom: 0px;
-                        color: #404040;
-
-                        a {
-                            margin-left: 3px;
-                            margin-right: 3px;
+                        .linkedin {
+                            width: 24px;
+                            margin-bottom: 10px;
+                            color:  mat-color($vimfit-accent);
                         }
                     }
+                }
+
+                .member-info-line-contact {
+                    margin: auto 0;
                 }
             }
         }
