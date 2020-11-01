@@ -26,7 +26,7 @@ export class Milestone2Component implements OnInit {
       'map',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/m2-features/map.svg'));
     iconRegistry.addSvgIcon(
-      'training',
+      'training2',
       sanitizer.bypassSecurityTrustResourceUrl('assets/icons/m2-features/training.svg'));
     iconRegistry.addSvgIcon(
       'video',
