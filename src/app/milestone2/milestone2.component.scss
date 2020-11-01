@@ -316,6 +316,55 @@
                 font-style: italic;
                 text-align: left;
                 font-size: 16px;
+                color: #404040;
+            }
+
+            .table-container {
+                margin-top: 30px;
+                // width: 0%;
+                margin: 0 auto;
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .title-cell-left {
+                    border-right: 2px solid rgba(0, 0, 0, 0.17);
+                }
+
+                .title-cell-right {
+                    border-left: 2px solid rgba(0, 0, 0, 0.17);
+                }
+
+                tr {
+                    border-top: hidden;
+                }
+
+                .table {
+                    display: flex;
+                    justify-content: center
+                }
+
+                ul {
+                    padding-left: 30%;
+                }
+
+                li {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #404040;
+                    text-align: left;
+                }
+
+                .table-title {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #404040;
+                    width: 500px;
+                    text-align: center;
+                }
             }
 
             .card-container {
@@ -351,7 +400,7 @@
 
                 .image-card {
                     margin: 20px;
-                    padding: 0px 30px 0px 30px;    
+                    padding: 0px 30px 0px 30px;
                     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
                     background-color: #ffffff;
                     border-radius: 15px;
@@ -376,6 +425,7 @@
 
 .text-left {
     text-align: left;
+    color: #404040;
 }
 
 #milestone2 {
