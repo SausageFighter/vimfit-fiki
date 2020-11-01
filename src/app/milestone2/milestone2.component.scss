@@ -19,7 +19,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70%;
         margin: 0 auto;
 
         .text {
@@ -36,13 +35,13 @@
 
         .screenshots-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-direction: row;
             margin-top: 60px;
 
             .screenshots {
-                width: 400px;
-                height: 700px;
+                width: 340px;
+                height: 600px;
 
                 img {
                     border-radius: 10px;
@@ -60,6 +59,78 @@
         height: 100px;
     }
 
+    .survey-conclusion {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 60px;
+
+            .card-left {
+                width: 350px;
+                height: 300px;
+                overflow: hidden;
+                box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+                background-color: white;
+                border-radius: 15px;
+
+                &:hover {
+                    overflow: auto;
+                }
+            }
+
+            .card-right {
+                width: 800px;
+                height: 300px;
+                overflow: hidden;
+                box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+                background-color: white;
+                border-radius: 15px;
+
+                &:hover {
+                    overflow: auto;
+                }
+            }
+
+            .card-title {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                color: #404040;
+                font-size: 18px;
+                letter-spacing: 0px;
+                line-height: 1.2;
+                font-weight: 700;
+                font-style: normal;
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+
+
+    }
+
+    .section-title {
+        overflow: hidden;
+        font-family: "Roboto", sans-serif;
+        color: #404040;
+        font-size: 36px;
+        letter-spacing: 0px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-style: normal;
+        text-align: left;
+        padding-left: 5%;
+    }
 }
 
 #milestone2 {
