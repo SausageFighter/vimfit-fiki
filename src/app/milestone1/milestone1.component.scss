@@ -274,27 +274,30 @@
         }
     }
 
-    .metrics {
-        margin-top: 100px;
-        margin-bottom: 100px;
+    .honeycontainer {
 
-        h1 {
-            font-weight: 800;
-            font-size: 40px;
-            font-size: 60px;
-            color: #A9A9A9;
+        .metrics {
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            h1 {
+                font-weight: 800;
+                font-size: 40px;
+                font-size: 60px;
+                color: #A9A9A9;
+            }
         }
-    }
 
-    .chart-container {
-        display: flex;
-        justify-content: center;
-    }
+        .chart-container {
+            display: flex;
+            justify-content: center;
+        }
 
-    .note {
-        margin-top: 50px;
-        color: #404040;
-        border: 0;
+        .note {
+            margin-top: 50px;
+            color: #404040;
+            border: 0;
+        }
     }
 
     .cost {

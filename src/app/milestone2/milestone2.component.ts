@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
 
 @Component({
   selector: 'app-milestone2',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Milestone2Component implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
   }
