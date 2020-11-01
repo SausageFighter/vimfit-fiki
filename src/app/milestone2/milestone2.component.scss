@@ -225,6 +225,39 @@
                 }
 
             }
+
+            .step-subtitle {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                .footprints {
+                    width: 60px;
+                    height: auto;
+                    margin: auto 30px auto 0px;
+                }
+
+                .step {
+                    font-size: 36px;
+                    margin: auto 30px auto 0px;
+                }
+
+                .subtitle {
+                    font-size: 28px;
+                    font-weight: 700;
+                    margin: auto 0px auto 0px;
+                }
+            }
+
+            .italic-description {
+                font-style: italic;
+                text-align: left;
+            }
+
+            .steps-spacer {
+                height: 50px;
+            }
         }
     }
 
