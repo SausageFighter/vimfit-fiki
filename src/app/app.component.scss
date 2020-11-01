@@ -1,6 +1,7 @@
 @import "_config.scss";
 
 mat-sidenav-container {
+    scrollbar-width: none;
 
     mat-sidenav {
         background-color: whitesmoke;
