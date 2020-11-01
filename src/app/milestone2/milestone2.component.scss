@@ -89,6 +89,7 @@
 
                 &:hover {
                     overflow: auto;
+                    scrollbar-width: none;
                 }
             }
 
@@ -102,6 +103,7 @@
 
                 &:hover {
                     overflow: auto;
+                    scrollbar-width: none;
                 }
 
                 .icons-container {
