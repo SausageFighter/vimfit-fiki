@@ -22,6 +22,7 @@ import { ResponsiveSidenavModule } from './responsive-sidenav/responsive-sidenav
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Milestone3Component } from './milestone3/milestone3.component';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { Milestone3Component } from './milestone3/milestone3.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatDividerModule,
+    MatCarouselModule.forRoot(),
     MatIconModule,
     MatButtonModule,
     MatCardModule,

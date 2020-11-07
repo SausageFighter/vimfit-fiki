@@ -8,6 +8,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./milestone3.component.scss']
 })
 export class Milestone3Component implements OnInit {
+  private readonly FOLDER = 'assets/sketches';
+  imagesSketches = ['chat.jpg', 'coach1.jpg', 'coach2.jpg', 'inspiration.jpg', 'login_register.jpg', 'profile.jpg', 'train.jpg'].map(name => `${this.FOLDER}/${name}`);
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(

@@ -91,4 +91,32 @@
             </div>
         </div>
     </div>
+
+    <div class="spacer"></div>
+
+    <div class="subtitle text-left">Sketches</div>
+
+        <mat-carousel
+            timings="250ms ease-in"
+            [autoplay]="false"
+            interval="5000"
+            color="accent"
+            maxWidth="auto"
+            [maintainAspectRatio]="false"
+            slideHeight="600px"
+            [loop]="true"
+            [hideArrows]="false"
+            [hideIndicators]="true"
+            [useKeyboard]="true"
+            [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide
+                #matCarouselSlide
+                *ngFor="let image of imagesSketches"
+                [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
 </div>
