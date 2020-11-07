@@ -20,8 +20,81 @@
     .spacer {
         height: 100px;
     }
+
+    .subtitle {
+        font-size: 36px;
+        font-weight: 700;
+        @media only screen and (min-width: 768px) {
+            margin-left: 100px;        
+        }
+        margin-bottom: 30px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto 20px auto;
+
+        .feature-card {
+            margin-top: 20px;
+            box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+            background-color: white;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 10px auto;
+
+
+            .title {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                margin: 15px;
+            }
+
+            .subfeatures {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0px 20px;
+
+                .subfeature {
+                    flex-grow: 1;
+                    @media only screen and (min-width: 768px) {
+                        max-width: 200px;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        max-width: 300px;
+                    }
+                    margin: 0px auto;
+
+                    .subfeature-icon {
+                        margin: 5px auto;
+                        width: 60px;
+                        height: auto;
+                    }
+
+                    .subfeature-name {
+                        margin: 5px auto 20px auto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #404040;
+                    }
+
+                    .subfeature-items {
+                        color: #404040;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
 
+.text-left {
+    text-align: left;
+    color: #404040;
+}
 
 #milestone3 {
     scroll-margin-top: 100px;
