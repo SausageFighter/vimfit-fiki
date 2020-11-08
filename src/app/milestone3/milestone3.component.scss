@@ -30,6 +30,15 @@
         margin-bottom: 30px;
     }
 
+    .subtitle-info {
+        font-size: 18px;
+        font-weight: 500;
+        @media only screen and (min-width: 768px) {
+            margin-left: 100px;        
+        }
+        margin-bottom: 30px;
+    }
+
     .features {
         display: flex;
         flex-wrap: wrap;
