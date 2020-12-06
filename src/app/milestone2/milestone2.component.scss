@@ -1,8 +1,6 @@
 .milestone2-container {
     margin-top: 100px;
-
     .milestone2 {
-
         h1 {
             font-weight: 700;
             font-size: 60px;
@@ -10,23 +8,19 @@
             margin: 0;
         }
     }
-
     h1 {
         color: #c9c9c9;
         font-weight: 700;
         font-size: 28px;
     }
-
     .introduction {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-
         @media only screen and (min-width: 768px) {
             width: 70%
         }
-
         .text {
             margin-top: 50px;
             overflow: hidden;
@@ -39,18 +33,15 @@
             text-align: left;
             font-size: 20px;
         }
-
         .screenshots-container {
             display: flex;
             justify-content: space-evenly;
             flex-direction: row;
             flex-wrap: wrap;
             margin-top: 60px;
-
             .screenshots {
                 width: 340px;
                 height: 600px;
-
                 img {
                     border-radius: 10px;
                     object-fit: contain;
@@ -62,26 +53,20 @@
             }
         }
     }
-
     .spacer {
         height: 100px;
     }
-
     .survey-conclusion {
-
         @media only screen and (min-width: 768px) {
             width: 70%
         }
-
         margin: 0 auto;
-
         .row {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 60px;
-
             .card-left {
                 width: 350px;
                 height: 350px;
@@ -90,13 +75,11 @@
                 background-color: white;
                 border-radius: 15px;
                 margin-bottom: 30px;
-
                 &:hover {
                     overflow: auto;
                     scrollbar-width: none;
                 }
             }
-
             .card-right {
                 width: 800px;
                 height: 350px;
@@ -104,27 +87,22 @@
                 box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
                 background-color: white;
                 border-radius: 15px;
-
                 &:hover {
                     overflow: auto;
                     scrollbar-width: none;
                 }
-
                 .icons-container {
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: row;
                     justify-content: space-evenly;
-
                     .feature {
                         width: 150px;
                         height: 100px;
-
                         p {
                             margin-top: 3%;
                             text-align: center;
                         }
-
                         mat-icon {
                             width: 50px;
                             height: 50px;
@@ -132,17 +110,13 @@
                     }
                 }
             }
-
             p {
                 text-align: left;
                 padding-left: 5%;
                 padding-right: 5%;
             }
         }
-
-
     }
-
     .section-title {
         overflow: hidden;
         font-family: "Roboto", sans-serif;
@@ -154,7 +128,6 @@
         font-style: normal;
         text-align: left;
     }
-
     .card-title {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -166,16 +139,12 @@
         font-style: normal;
         text-align: center;
     }
-
     section {
-
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
             width: 70%
         }
-
         margin: 0 auto;
-
         .title {
             color: #404040;
             overflow: hidden;
@@ -187,16 +156,13 @@
             font-style: normal;
             text-align: left;
         }
-
         .content {
             margin-top: 20px;
-
             .row-problem {
                 display: flex;
                 flex-wrap: wrap-reverse;
                 justify-content: space-between;
                 text-align: left;
-
                 .icon {
                     align-self: flex-end;
                     margin-left: 36px;
@@ -204,18 +170,14 @@
                     height: 60px;
                     margin: auto;
                 }
-
                 .info-text {
-
                     // flex-grow: 1;/* Medium devices (landscape tablets, 768px and up) */
                     @media only screen and (min-width: 768px) {
                         width: 80%
                     }
-
                     margin-top: 25px;
                     margin-bottom: 25px;
                 }
-
                 @media only screen and (min-width: 768px) {
                     .divider {
                         margin: 20px auto;
@@ -225,35 +187,28 @@
                     }
                 }
             }
-
             .row-solution {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 text-align: left;
-
                 .icon {
                     margin-right: 36px;
                     width: 60px;
                     height: auto;
                     margin: auto;
                 }
-
                 .info-text {
-
                     /* Medium devices (landscape tablets, 768px and up) */
                     @media only screen and (min-width: 768px) {
                         width: 80%
                     }
-
                     @media only screen and (max-width: 767px) {
                         min-width: 100%
                     }
-
                     margin-top: 25px;
                     margin-bottom: 25px;
                 }
-
                 @media only screen and (min-width: 768px) {
                     .divider {
                         margin: 20px auto;
@@ -262,9 +217,7 @@
                         border: 1px solid #c9c9c9;
                     }
                 }
-
             }
-
             .step-subtitle {
                 display: flex;
                 justify-content: flex-start;
@@ -272,82 +225,65 @@
                 margin-top: 30px;
                 margin-bottom: 30px;
                 color: #5e5e5e;
-
                 .footprints {
                     @media only screen and (min-width: 768px) {
                         width: 60px;
                     }
-
                     @media only screen and (max-width: 767px) {
                         width: 50px;
                     }
-
                     height: auto;
                     margin: 0px 30px 20px 0px;
                 }
-
                 .step {
                     @media only screen and (min-width: 768px) {
                         font-size: 36px;
                     }
-
                     @media only screen and (max-width: 767px) {
                         font-size: 28px;
                     }
-
                     margin: auto 30px auto 0px;
                 }
-
                 .subtitle {
                     @media only screen and (min-width: 768px) {
                         font-size: 28px;
                     }
-
                     @media only screen and (max-width: 767px) {
                         font-size: 20px;
                     }
-
                     font-weight: 700;
                     margin: auto 0px auto 0px;
                     text-align: left;
                 }
             }
-
             .italic-description {
                 font-style: italic;
                 text-align: left;
                 font-size: 16px;
                 color: #404040;
             }
-
             .table-container {
                 margin-top: 30px;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-
                 .title-cell-left {
                     border-right: 2px solid rgba(0, 0, 0, 0.17);
                 }
-
                 .title-cell-right {
                     border-left: 2px solid rgba(0, 0, 0, 0.17);
                 }
-
                 tr {
                     border-top: hidden;
                 }
-
                 .table {
                     display: flex;
                     justify-content: center
                 }
-
                 ul {
                     padding-left: 30%;
                 }
-
                 li {
                     font-size: 16px;
                     font-style: normal;
@@ -355,7 +291,6 @@
                     color: #404040;
                     text-align: left;
                 }
-
                 .table-title {
                     font-size: 18px;
                     font-style: normal;
@@ -365,13 +300,11 @@
                     text-align: center;
                 }
             }
-
             .card-container {
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;
                 justify-content: space-evenly;
-
                 .step-card {
                     width: 350px;
                     height: 300px;
@@ -380,7 +313,6 @@
                     background-color: white;
                     border-radius: 15px;
                     margin-bottom: 30px;
-
                     p {
                         text-align: left;
                         padding-left: 5%;
@@ -388,29 +320,24 @@
                     }
                 }
             }
-
             .spacer {
                 height: 50px;
             }
-
             .row-image-cards {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-
                 .image-card {
                     margin: 20px;
                     padding: 0px 30px 0px 30px;
                     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
                     background-color: #ffffff;
                     border-radius: 15px;
-
                     .image {
                         width: 60px;
                         margin: 10px;
                         height: auto;
                     }
-
                     .caption {
                         margin-bottom: 5px;
                         font-weight: 700;
