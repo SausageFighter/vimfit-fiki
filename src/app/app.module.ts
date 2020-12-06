@@ -24,6 +24,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { Milestone3Component } from './milestone3/milestone3.component';
 import { MatCarouselModule } from '@ngbmodule/material-carousel';
 import { Milestone4Component } from './milestone4/milestone4.component';
+import { Milestone5Component } from './milestone5/milestone5.component';
+import { Milestone6Component } from './milestone6/milestone6.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { Milestone4Component } from './milestone4/milestone4.component';
     SidenavComponent,
     Milestone3Component,
     Milestone4Component,
+    Milestone5Component,
+    Milestone6Component,
   ],
   imports: [
     BrowserModule,
