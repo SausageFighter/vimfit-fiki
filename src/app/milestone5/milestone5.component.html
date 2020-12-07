@@ -5,8 +5,27 @@
     <br>
     <h1>Validation 2</h1>
     <div class="spacer"></div>
+
+    <h2 class="subtitle">Collecting contact data from users</h2>
+
+    <h3>On the Landing Page we inserted an email subscription section, right on the first opened page, as seen below. From a total of 320 of visitors, 8.43% were interested in subscribing to out newsletter.</h3>
+
+    <div class="m5-img-container">
+        <img src="../../assets/m5/landing_page_actions.png">
+    </div>
+
+    <h3>We also added download buttons for IOS and Android to monitor interest rate in downloading our app.</h3>
+
+
+    <div class="spacer"></div>
+
+    <h2 class="subtitle">Analytics</h2>
+
+    <h3>We added Google Analytics and Hotjar to our Landing page before starting to spread it.</h3>
+
     <table class="hotjar-stats">
-        <caption>Hotjar generated statistics</caption>
+
+        <h2 class="subsubtitle">Hotjar generated statistics</h2>
         <tr>
             <th></th>
             <th>Desktop</th>
@@ -52,5 +71,46 @@
             <td colspan="2" class="info">50 seconds</td>
         </tr>
     </table>
+
+    <div class="spacer"></div>
+
+    <div>
+        <h2 class="subtitle">Google Analytics generated statistics</h2>
+        <br>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesAnalytics" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+    </div>
+
+
+    <div>
+        <h2 class="subtitle">Marketing Strategies</h2>
+        <br>
+
+        <h3>We created an Instagram and Facebook account to spread the word about our application. To share the Landing page, we created a post from our Facebook account as you can see bellow. We also opted for promoting the Facebook posts and we reached
+            to 972 people. Besides that, we also messaged acquaintances to inform them about our page. Another method of spreading the word was by telling people the page link.</h3>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesMarketing" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+        <h3>As we can see below, the most efficient method was through Facebook posts.</h3>
+
+        <div class="m5-img-container">
+            <img src="../../assets/m5/users_reach.png">
+        </div>
+
+    </div>
+
     <div class="spacer"></div>
 </div>
