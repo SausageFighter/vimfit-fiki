@@ -28,8 +28,12 @@ mat-toolbar {
         flex: 1 1 auto;
     }
 
-    .team-button {
-        @media screen and (max-width: 960px) {
+    @media screen and (max-width: 960px) {
+        .team-button {
+            visibility: hidden;
+        }
+         
+        .menu-button {
             visibility: hidden;
         }
     }
