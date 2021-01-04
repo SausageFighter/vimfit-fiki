@@ -24,6 +24,8 @@
         height: 100px;
     }
     .hotjar-stats {
+        display: block;
+        overflow-x: auto;
         margin: 10px auto;
         caption {
             font-size: 22px;
