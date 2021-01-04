@@ -27,6 +27,12 @@ mat-toolbar {
     .spacer {
         flex: 1 1 auto;
     }
+
+    .team-button {
+        @media screen and (max-width: 960px) {
+            visibility: hidden;
+        }
+    }
 }
 
 mat-sidenav-container {
