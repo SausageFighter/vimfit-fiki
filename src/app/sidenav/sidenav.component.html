@@ -1,25 +1,25 @@
 <div class="container">
-    <div class="milestone">
-        <a href="#milestone6">M6</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 6}">
+        <a href="#milestone6" [ngClass]="{'active': (currentMilestone$ | async) === 6}">M6</a>
     </div>
 
-    <div class="milestone">
-        <a href="#milestone5">M5</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 5}">
+        <a href="#milestone5" [ngClass]="{'active': (currentMilestone$ | async) === 5}">M5</a>
     </div>
     
-    <div class="milestone">
-        <a href="#milestone4">M4</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 4}">
+        <a href="#milestone4" [ngClass]="{'active': (currentMilestone$ | async) === 4}">M4</a>
     </div>
 
-    <div class="milestone">
-        <a href="#milestone3">M3</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 3}">
+        <a href="#milestone3" [ngClass]="{'active': (currentMilestone$ | async) === 3}">M3</a>
     </div>
 
-    <div class="milestone">
-        <a href="#milestone2">M2</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 2}">
+        <a href="#milestone2" [ngClass]="{'active': (currentMilestone$ | async) === 2}">M2</a>
     </div>
 
-    <div class="milestone">
-        <a href="#milestone1">M1</a>
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 1}">
+        <a href="#milestone1" [ngClass]="{'active': (currentMilestone$ | async) === 1}">M1</a>
     </div>
 </div>

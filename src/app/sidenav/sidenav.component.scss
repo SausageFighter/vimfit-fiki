@@ -13,6 +13,16 @@
         font-weight: 700;
         margin-left: 20px;
         margin-right: 20px;
+
+        .active {
+            border-color: black;
+            color: black;
+        }
+    }
+
+    .active {
+        border-color: black;
+        color: black;
     }
 
     a:link,
