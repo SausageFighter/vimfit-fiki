@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { metrics, costs } from './costs';
+import { costs } from './costs';
 import { Subject } from 'rxjs';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
@@ -10,13 +10,10 @@ import { MatIconRegistry } from '@angular/material/icon';
   styleUrls: ['./milestone1.component.scss']
 })
 export class Milestone1Component implements OnInit {
-  metrics = metrics;
   costs = costs;
-  chartsWidth: number = 1000;
-  costsChartHeight: number = 400;
-  metricsChartHeight: number = 400;
+  chartsWidth: number = 1200;
+  costsChartHeight: number = 300;
 
-  metricsChartView: any[] = [this.chartsWidth * 0.8, this.costsChartHeight];
   costsChartView: any[] = [this.chartsWidth * 0.8, this.costsChartHeight];
 
   // options
@@ -80,31 +77,31 @@ export class Milestone1Component implements OnInit {
   }
 
   ngOnInit() {
-    this.chartsWidth = window.innerWidth;
     this.updateChartsView();
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.chartsWidth = event.target.innerWidth;
+    if (event.target.innerWidth < 1200) {
+      this.chartsWidth = event.target.innerWidth;
+    } else {
+      this.chartsWidth = 1200;
+    }
     this.updateChartsView();
   }
 
   updateChartsView() {
     if (this.chartsWidth < 426) {
-      this.costsChartHeight = 800;
-      this.metricsChartHeight = 150;
+      this.costsChartHeight = 300;
     } else {
-      this.costsChartHeight = 400;
-      this.metricsChartHeight = 400;
+      this.costsChartHeight = 300;
     }
 
     this.costsChartView = [this.chartsWidth * 0.8, this.costsChartHeight];
-    this.metricsChartView = [this.chartsWidth * 0.8, this.metricsChartHeight];
   }
 
   colorScheme = {
-    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
+    domain: ['#ff8001']
   };
 
 }

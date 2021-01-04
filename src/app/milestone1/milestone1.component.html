@@ -378,11 +378,18 @@
             <h1>Cost structure</h1>
         </div>
         <div class="chart-container">
-            <ngx-charts-pie-grid [view]="costsChartView" [scheme]="colorScheme" [results]="costs" label="Cost $">
-            </ngx-charts-pie-grid>
+            <ngx-charts-bar-vertical
+                [view]="costsChartView"
+                [scheme]="colorScheme"
+                [results]="costs"
+                [xAxis]="true"
+                [yAxis]="true"
+                [showYAxisLabel]="true"
+                yAxisLabel="Cost $">
+            </ngx-charts-bar-vertical>
         </div>
-        <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame and the total estimated sum is
-            <b>947,121.72€</b>. <a href="https://docs.google.com/spreadsheets/d/1qMITbRC4LJphp6orZ7jd061LK2bxRtzM7xQFYTXRSAo/edit?usp=sharing" target="_blank">More
+        <p class="note">* The cost structure was calculated on a <b>5 years</b> time frame  with different growth rates throughout the years. The total estimated sum is <b>911,111.34$</b>.
+            <a href="https://docs.google.com/spreadsheets/d/1qMITbRC4LJphp6orZ7jd061LK2bxRtzM7xQFYTXRSAo/edit?usp=sharing" target="_blank">More
                 Details</a></p>
     </div>
 
