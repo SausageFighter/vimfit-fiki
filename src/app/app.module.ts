@@ -26,6 +26,9 @@ import { MatCarouselModule } from '@ngbmodule/material-carousel';
 import { Milestone4Component } from './milestone4/milestone4.component';
 import { Milestone5Component } from './milestone5/milestone5.component';
 import { Milestone6Component } from './milestone6/milestone6.component';
+import { Milestone7Component } from './milestone7/milestone7.component';
+import { Milestone8Component } from './milestone8/milestone8.component';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +42,8 @@ import { Milestone6Component } from './milestone6/milestone6.component';
     Milestone4Component,
     Milestone5Component,
     Milestone6Component,
+    Milestone7Component,
+    Milestone8Component,
   ],
   imports: [
     BrowserModule,

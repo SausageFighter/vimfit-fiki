@@ -1,0 +1,305 @@
+<div id="milestone7" class="milestone7-container">
+    <div class="milestone7">
+        <h1>M7</h1>
+    </div>
+    <br>
+    <h1>Minimum Viable Product</h1>
+
+    <div class="introduction">
+        <div class="text">
+            <p>For this milestone we wanted to make sure that our assumptions were right, so we created a specific <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScFY-DwJwRnEFn8snznvrR5_HHq_YzqPOLQitzZe30VTkSAOA/viewform?usp=sf_link">survey</a>.
+                The result can be accessed <a target="_blank" href="https://docs.google.com/spreadsheets/d/1M01C7L95JpCj5Pc1kkQrOmCoJhwZnpy1OYQoNekLG40/edit?usp=sharing">here</a>.</p>
+
+        </div>
+
+        <h2 class="subtitle">Validation Survey</h2>
+
+        <div class="text">
+            <p>
+                As can be seen from the questions asked, the validation process focused on the habits of the people and past experiences.
+            </p>
+            <br>
+        </div>
+
+        <div class="m7-table">
+            <table class="table table-sm">
+                <thead>
+                    <td class="table-title"><b>Assumption</b></td>
+                    <td class="table-title center"><b>Validated</b></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>People follow online fitness videos</td>
+                        <td class="yes">Yes (91.3%)</td>
+                    </tr>
+                    <tr>
+                        <td>People follow an online training set scheduled on several days</td>
+                        <td class="no">No (52.2%)</td>
+                    </tr>
+                    <tr>
+                        <td>People follow exercises from a certain personal trainer</td>
+                        <td class="no">No (56.5%)</td>
+                    </tr>
+                    <tr>
+                        <td>People personalise their fitness trainings</td>
+                        <td class="yes">Yes (52.2%)</td>
+                    </tr>
+                    <tr>
+                        <td>People watch live training sessions</td>
+                        <td class="no">No (82.6%)</td>
+                    </tr>
+                    <tr>
+                        <td>Challenges are motivating people</td>
+                        <td class="yes">Yes (87%)</td>
+                    </tr>
+                    <tr>
+                        <td>People like timed competitions</td>
+                        <td class="no">No (87%)</td>
+                    </tr>
+                    <tr>
+                        <td>People are following a strict training program</td>
+                        <td class="no">No (60.9%)</td>
+                    </tr>
+                    <tr>
+                        <td>People are using the Chat feature from social media apps every day</td>
+                        <td class="yes">Yes (56.5%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs are motivated by money to work in a certain place</td>
+                        <td class="yes">Yes (100%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs are motivated by money to train people</td>
+                        <td class="no">No (100%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs post fitness content on social media</td>
+                        <td class="yes">Yes (66.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs do live training sessions</td>
+                        <td class="no">No (66.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs challenge their clients</td>
+                        <td class="yes">Yes (100%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs usually recommend their clients to vary their workouts</td>
+                        <td class="yes">Yes (100%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs are having a hard time following the client’s progress online</td>
+                        <td class="yes">Yes (66.7%)</td>
+                    </tr>
+                    <tr>
+                        <td>PTs use the Chat often when talking to their clients online</td>
+                        <td class="yes">Yes (66.7%)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="subtitle">Feature List</h2>
+        <div class="text">
+            <p>
+                The features that we believe will give enough value for the people to use it, despite other similar apps, are:
+            </p>
+
+            <div class="m7-list">
+                <div class="m7-list-container">
+                    <ul>
+                        <li>training packages</li>
+                        <li>fitness challenges</li>
+                        <li>fitness oriented chat</li>
+                        <li>live video training sessions</li>
+                        <li>people can hire a personal trainer from the app</li>
+                        <li>trainers can earn money for their fitness services</li>
+                        <li>trainers can easily follow the progress of their clients</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <p>
+                We also create a more complex description of each feature and how they all interact in the document from <a target="_blank" href="https://coda.io/d/VIM-Fit_dOCrKR8Y9KF">here</a>.
+            </p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <h2 class="subtitle">MVP</h2>
+
+        <div class="text">
+            <p>For the actual design, we added a lot of differences from the mock-up, to accommodate the real life user experience and the validated assumptions.
+            </p>
+            <p>Right after the user downloads the app, there will be 3 splash screens, to set the tone of the app:
+            </p>
+            <br>
+
+        </div>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesSplash" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+
+        <div class="text">
+            <p>
+                The Home page remains the page with all the training packs, and it looks like this:
+            </p>
+            <br>
+
+            <div class="img-home-page">
+                <img src="../../assets/home-screen.png">
+            </div>
+
+            <br>
+            <p>As it can be seen, the bottom buttons changed slightly, to increase the usability. The bottom navigation offers:</p>
+
+            <div class="spacer"></div>
+
+            <h2 class="subsubtitle">The Inspiration page</h2>
+            <br>
+
+            <p>Is the main page of the app. The brief functionalities accessible from here are:</p>
+            <div class="m7-list">
+                <div class="m7-list-container">
+                    <ul>
+                        <li>active challenges</li>
+                        <li>training packs</li>
+                        <li>top trainers</li>
+                        <li>search tab</li>
+                        <li>chat</li>
+                        <li>activity zone, to receive notifications of workouts, challenges or recommendations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>As hiring a personal trainer is a big part of the app, the top trainers have a section on this page, so it can be easily found. Also, we value the importance of challenges, so we kept the challenge section on this page.</p>
+            <p>The simplified look of the packages give the whole app a clean look, so users can focus on the quality of the presentation pictures and content.</p>
+            <p>We added an activity zone because as this is the main screen, so all the important elements should be here. In this way, the user will not miss any notifications. Also, the buffer zone helps navigate to the favourite zones faster.</p>
+            <br>
+        </div>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesInspiration" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+
+        <div class="text">
+            <h2 class="subsubtitle">The Personal Trainers page</h2>
+            <br>
+
+            <p>As said before, finding a personal trainer is a strong pillar of this app, so we dedicated a whole navigation screen just for finding the best trainer for a user. The available features from here are:</p>
+            <div class="m7-list">
+                <div class="m7-list-container">
+                    <ul>
+                        <li>all trainers are listed here</li>
+                        <li>here are also all the top trainers</li>
+                        <li>can access a trainer’s profile</li>
+                        <li>can filter the search</li>
+                        <li>can directly follow a trainer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img-pt">
+                <img src="../../assets/PT.png">
+            </div>
+
+            <h2 class="subsubtitle">The Training Page</h2>
+            <br>
+
+            <p>This page remains the training focus on this app. This is where the user achieves him or her training goals. All the physical activity will happen here. The available functionalities are:</p>
+            <div class="m7-list">
+                <div class="m7-list-container">
+                    <ul>
+                        <li>if the user has an ongoing training package, it can be started from here</li>
+                        <li>exercise recommendation will appear here</li>
+                        <li>customize schedule</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+
+            <p>As a difference from the mock-up is when opening a training pack, before buying. The user can see a list with all the headline exercises from a certain day, so he/she can anticipate what will be next. Also the user can try the first day for
+                free, to help decide buying.</p>
+            <br>
+        </div>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesTraining" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+
+        <div class="text">
+            <h2 class="subsubtitle">The Pofile</h2>
+            <br>
+
+            <p>This page was adjusted so that it would be more visually pleasing, so that it will contain a lot of information, without seeming crowded. Because the photos are more attractive than text, we chose to fill a great amount of the screen with
+                the trainer’s photo.
+            </p>
+            <div class="m7-list">
+                <div class="m7-list-container">
+                    <ul>
+                        <li>the basic profile contains public information about the user</li>
+                        <li>for trainers, the profile contains all the public training packs and challenges that they’ve made, along with trainer details (experience, certificates etc)
+                        </li>
+                        <li>from a trainer’s profile, a user can follow and/or hire</li>
+                        <li>there is a chat button that sends the user to the conversation with this trainer</li>
+                        <li>there are also search and share options</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+
+            <p>As the relevant information about the trainer we chose the experience, the number of trainees that hired the trainer and the number of certificates. We created the hire button as floating, so that it will be handy and not give the user too
+                much time to think otherwise.</p>
+            <br>
+        </div>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesProfile" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+
+        <div class="text">
+            <h2 class="subsubtitle">App Demo</h2>
+            <br>
+
+            <p>Here you can see a little demo of how everything comes together right here:</p>
+        </div>
+
+        <mat-carousel timings="250ms ease-in" [autoplay]="false" interval="5000" color="accent" maxWidth="auto" [maintainAspectRatio]="false" slideHeight="600px" [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+
+            <mat-carousel-slide #matCarouselSlide *ngFor="let image of imagesDemo" [hideOverlay]="true">
+                <img [src]="image" height="600" />
+            </mat-carousel-slide>
+        </mat-carousel>
+
+        <div class="spacer"></div>
+    </div>
+</div>

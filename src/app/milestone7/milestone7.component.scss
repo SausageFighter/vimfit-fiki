@@ -1,0 +1,117 @@
+.milestone7-container {
+    margin-top: 100px;
+    .milestone7 {
+        h1 {
+            font-weight: 700;
+            font-size: 60px;
+            color: #c9c9c9;
+            margin: 0;
+        }
+    }
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        color: #404040;
+        @media only screen and (min-width: 768px) {
+            width: 70%
+        }
+        .text {
+            margin-top: 50px;
+            overflow: hidden;
+            font-family: "Roboto", sans-serif;
+            color: #404040;
+            letter-spacing: 0px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-style: normal;
+            text-align: left;
+            font-size: 20px;
+        }
+        .m7-list {
+            margin-top: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            flex-direction: column;
+            max-width: 442px;
+            box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+            background-color: #ffffff;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 14px;
+            .m7-list-container {
+                padding: 3%;
+            }
+        }
+        .subtitle {
+            margin-top: 4%;
+            font-size: 32px;
+        }
+        .subsubtitle {
+            margin-top: 15px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .img-home-page {
+            height: 600px;
+            width: 290px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0;
+            transition: all 0.3s ease-in-out 0s;
+            img {
+                object-fit: contain;
+                max-height: 100%;
+                max-width: 100%;
+                height: 100%;
+                width: auto;
+            }
+        }
+        .img-pt {
+            height: 1400px;
+            width: 290px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0;
+            transition: all 0.3s ease-in-out 0s;
+            img {
+                object-fit: contain;
+                max-height: 100%;
+                max-width: 100%;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    .m7-table {
+        table {
+            overflow-x: auto;
+            td {
+                text-align: left;
+                padding: 13px;
+                padding-left: 100px;
+            }
+            .yes {
+                color: green;
+                text-align: center;
+            }
+            .no {
+                color: red;
+                text-align: center;
+            }
+            .center {
+                text-align: center;
+            }
+        }
+    }
+    h1 {
+        color: #c9c9c9;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .spacer {
+        height: 100px;
+    }
+}
