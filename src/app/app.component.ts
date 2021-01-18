@@ -7,6 +7,7 @@ import { Milestone5Component } from './milestone5/milestone5.component';
 import { Milestone6Component } from './milestone6/milestone6.component';
 import { Milestone7Component } from './milestone7/milestone7.component';
 import { Milestone8Component } from './milestone8/milestone8.component';
+import { Milestone9Component } from './milestone9/milestone9.component';
 import { LocationService } from './location.service';
 import { TeamComponent } from './team/team.component';
 
@@ -28,6 +29,7 @@ export class AppComponent implements OnInit {
   @ViewChild(Milestone6Component, {read: ElementRef}) milestone6: ElementRef;
   @ViewChild(Milestone7Component, {read: ElementRef}) milestone7: ElementRef;
   @ViewChild(Milestone8Component, {read: ElementRef}) milestone8: ElementRef;
+  @ViewChild(Milestone9Component, {read: ElementRef}) milestone9: ElementRef;
   @ViewChild(TeamComponent, {read: ElementRef}) team: ElementRef;
 
   constructor(private locationService: LocationService) {}
@@ -54,6 +56,7 @@ export class AppComponent implements OnInit {
     let currentMilestone = 0;
     this.offsets = [
       0,
+      this.milestone8.nativeElement.offsetTop,
       this.milestone7.nativeElement.offsetTop,
       this.milestone6.nativeElement.offsetTop,
       this.milestone5.nativeElement.offsetTop,

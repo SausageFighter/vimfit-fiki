@@ -1,4 +1,8 @@
 <div class="container">
+    <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 9}">
+        <a href="#milestone9" [ngClass]="{'active': (currentMilestone$ | async) === 9}">M9</a>
+    </div>
+
     <div class="milestone" [ngClass]="{'active': (currentMilestone$ | async) === 8}">
         <a href="#milestone8" [ngClass]="{'active': (currentMilestone$ | async) === 8}">M8</a>
     </div>

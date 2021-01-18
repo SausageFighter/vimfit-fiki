@@ -28,6 +28,7 @@ import { Milestone5Component } from './milestone5/milestone5.component';
 import { Milestone6Component } from './milestone6/milestone6.component';
 import { Milestone7Component } from './milestone7/milestone7.component';
 import { Milestone8Component } from './milestone8/milestone8.component';
+import { Milestone9Component } from './milestone9/milestone9.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { Milestone8Component } from './milestone8/milestone8.component';
     Milestone6Component,
     Milestone7Component,
     Milestone8Component,
+    Milestone9Component,
   ],
   imports: [
     BrowserModule,
